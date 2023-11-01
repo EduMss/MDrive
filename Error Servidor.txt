@@ -1,0 +1,17 @@
+Iniciando loop
+Cliente conectado: 192.168.0.169
+Enviando arquivos do diretorios
+C:\Users\Eduar\Downloads\openjfx-21.0.1_windows-x64_bin-sdk.zip
+/home/Compartilhamentos/Eduardo/openjfx-21.0.1_windows-x64_bin-sdk.zip
+Numero do pacote: 0 | Recendo pacote : 0 \ 5914
+java.io.StreamCorruptedException: invalid stream header: 0134E206
+        at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:987)
+        at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:414)
+        at Components.Rede.Pacotes.getObjectFromByte(Pacotes.java:186)
+        at Components.SocketsRede.ReceberArquivo.<init>(ReceberArquivo.java:55)
+        at Components.Server.Server.<init>(Server.java:70)
+        at MDrive.RunServer.main(RunServer.java:7)
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "Components.Arquivos.Arquivo.getNumeroPacote()" because "arquivo" is null
+        at Components.SocketsRede.ReceberArquivo.<init>(ReceberArquivo.java:57)
+        at Components.Server.Server.<init>(Server.java:70)
+        at MDrive.RunServer.main(RunServer.java:7)
